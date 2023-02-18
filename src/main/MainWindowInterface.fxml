@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="460.0" styleClass="root" stylesheets="@MainWindowStyle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.MainWindowController">
+   <children>
+      <Button layoutX="216.0" layoutY="159.0" mnemonicParsing="false" text="Button">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
