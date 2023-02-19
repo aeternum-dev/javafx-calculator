@@ -1,15 +1,255 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="600.0" prefWidth="460.0" styleClass="root" stylesheets="@MainWindowStyle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.MainWindowController">
    <children>
-      <Button layoutX="216.0" layoutY="159.0" mnemonicParsing="false" text="Button">
-         <font>
-            <Font size="39.0" />
-         </font>
-      </Button>
+      <Pane layoutX="4.0" layoutY="34.0" prefHeight="560.0" prefWidth="452.0" styleClass="mainpane" stylesheets="@MainWindowStyle.css">
+         <children>
+            <Pane layoutX="10.0" layoutY="9.0" prefHeight="100.0" prefWidth="430.0" styleClass="highlight" stylesheets="@MainWindowStyle.css">
+               <children>
+                  <Label fx:id="calculatorOutput" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="13.0" layoutY="24.0" prefHeight="52.0" prefWidth="403.0" text="0.0" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="45.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="btn7" layoutX="10.0" layoutY="120.0" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" stylesheets="@MainWindowStyle.css">
+               <styleClass>
+                  <String fx:value="highlight" />
+                  <String fx:value="highlight" />
+               </styleClass>
+               <children>
+                  <Label layoutX="37.0" layoutY="24.0" text="7" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="45.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="btn8" layoutX="120.0" layoutY="120.0" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" stylesheets="@MainWindowStyle.css">
+               <styleClass>
+                  <String fx:value="highlight" />
+                  <String fx:value="highlight" />
+               </styleClass>
+               <children>
+                  <Label layoutX="37.0" layoutY="24.0" text="8" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="45.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="btn9" layoutX="230.0" layoutY="120.0" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" stylesheets="@MainWindowStyle.css">
+               <styleClass>
+                  <String fx:value="highlight" />
+                  <String fx:value="highlight" />
+               </styleClass>
+               <children>
+                  <Label layoutX="37.0" layoutY="24.0" text="9" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="45.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="btnAddition" layoutX="340.0" layoutY="120.0" onMouseClicked="#onSymbolClicked" prefHeight="100.0" prefWidth="100.0" stylesheets="@MainWindowStyle.css">
+               <styleClass>
+                  <String fx:value="highlight" />
+                  <String fx:value="highlight" />
+               </styleClass>
+               <children>
+                  <Label layoutX="37.0" layoutY="24.0" text="+" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="45.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="btn4" layoutX="10.0" layoutY="230.0" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" stylesheets="@MainWindowStyle.css">
+               <styleClass>
+                  <String fx:value="highlight" />
+                  <String fx:value="highlight" />
+               </styleClass>
+               <children>
+                  <Label layoutX="37.0" layoutY="24.0" text="4" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="45.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="btn5" layoutX="120.0" layoutY="230.0" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" stylesheets="@MainWindowStyle.css">
+               <styleClass>
+                  <String fx:value="highlight" />
+                  <String fx:value="highlight" />
+               </styleClass>
+               <children>
+                  <Label layoutX="37.0" layoutY="24.0" text="5" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="45.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="btn6" layoutX="230.0" layoutY="230.0" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" stylesheets="@MainWindowStyle.css">
+               <styleClass>
+                  <String fx:value="highlight" />
+                  <String fx:value="highlight" />
+               </styleClass>
+               <children>
+                  <Label layoutX="37.0" layoutY="24.0" text="6" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="45.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="btnSubtraction" layoutX="340.0" layoutY="230.0" onMouseClicked="#onSymbolClicked" prefHeight="100.0" prefWidth="100.0" stylesheets="@MainWindowStyle.css">
+               <styleClass>
+                  <String fx:value="highlight" />
+                  <String fx:value="highlight" />
+               </styleClass>
+               <children>
+                  <Label layoutX="43.0" layoutY="24.0" text="-" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="45.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="btn1" layoutX="10.0" layoutY="340.0" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" stylesheets="@MainWindowStyle.css">
+               <styleClass>
+                  <String fx:value="highlight" />
+                  <String fx:value="highlight" />
+               </styleClass>
+               <children>
+                  <Label layoutX="37.0" layoutY="24.0" text="1" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="45.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="btn2" layoutX="120.0" layoutY="340.0" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" stylesheets="@MainWindowStyle.css">
+               <styleClass>
+                  <String fx:value="highlight" />
+                  <String fx:value="highlight" />
+               </styleClass>
+               <children>
+                  <Label layoutX="37.0" layoutY="24.0" text="2" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="45.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="btn3" layoutX="230.0" layoutY="340.0" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" stylesheets="@MainWindowStyle.css">
+               <styleClass>
+                  <String fx:value="highlight" />
+                  <String fx:value="highlight" />
+               </styleClass>
+               <children>
+                  <Label layoutX="37.0" layoutY="24.0" text="3" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="45.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="btnMultiplication" layoutX="340.0" layoutY="340.0" onMouseClicked="#onSymbolClicked" prefHeight="100.0" prefWidth="100.0" stylesheets="@MainWindowStyle.css">
+               <styleClass>
+                  <String fx:value="highlight" />
+                  <String fx:value="highlight" />
+               </styleClass>
+               <children>
+                  <Label layoutX="39.0" layoutY="24.0" text="x" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="45.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="btnClear" layoutX="10.0" layoutY="450.0" onMouseClicked="#onSymbolClicked" prefHeight="100.0" prefWidth="100.0" stylesheets="@MainWindowStyle.css">
+               <styleClass>
+                  <String fx:value="highlight" />
+                  <String fx:value="highlight" />
+               </styleClass>
+               <children>
+                  <Label layoutX="36.0" layoutY="24.0" text="C" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="45.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="btn0" layoutX="120.0" layoutY="450.0" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" stylesheets="@MainWindowStyle.css">
+               <styleClass>
+                  <String fx:value="highlight" />
+                  <String fx:value="highlight" />
+               </styleClass>
+               <children>
+                  <Label layoutX="37.0" layoutY="24.0" text="0" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="45.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="btnEquation" layoutX="230.0" layoutY="450.0" onMouseClicked="#onSymbolClicked" prefHeight="100.0" prefWidth="100.0" stylesheets="@MainWindowStyle.css">
+               <styleClass>
+                  <String fx:value="highlight" />
+                  <String fx:value="highlight" />
+               </styleClass>
+               <children>
+                  <Label layoutX="37.0" layoutY="27.0" text="=" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="45.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="btnDivision" layoutX="340.0" layoutY="450.0" onMouseClicked="#onSymbolClicked" prefHeight="100.0" prefWidth="100.0" stylesheets="@MainWindowStyle.css">
+               <styleClass>
+                  <String fx:value="highlight" />
+                  <String fx:value="highlight" />
+               </styleClass>
+               <children>
+                  <Label layoutX="44.0" layoutY="24.0" text="/" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="45.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane fx:id="titlePane" prefHeight="34.0" prefWidth="460.0" stylesheets="@MainWindowStyle.css">
+         <children>
+            <ImageView fx:id="btnClose" fitHeight="16.0" fitWidth="16.0" layoutX="429.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/close.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="27.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnMinimize" fitHeight="16.0" fitWidth="16.0" layoutX="410.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/hide.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="47.0" layoutY="8.0" text="Calculator" textFill="WHITE" />
+         </children>
+      </Pane>
    </children>
 </AnchorPane>
